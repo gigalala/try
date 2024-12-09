@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script>
+        function expandPanel(i) {
+            var button = document.getElementById("button-" + i);
+            var content = document.getElementById("content-" + i);
+            var expanded = content.style.display != "none" && content.style.display != "";
+            if (expanded) {
+                content.style.display = 'none'
+                button.innerHTML = 'expand_less'
+            }
+            else {
+                content.style.display = 'block'
+                button.innerHTML = 'expand_more'
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <a class="name-nav-title" href="/try">
+            <div>niv tschaikov</div>
+        </a>
+    </nav>
+    <div class="page-container">
+        <div class="page">
+            <div class="title">CV</div>
+            <div class="title-underline"></div>
+            <div class="expansion-panel ">
+                <div class="expansion-panel-header">
+                    <div class="expansion-panel-header-title">EDUCATION</div>
+                    <div class="expand-icon-button">
+                        <span class="material-icons expand-icon" id="button-1" onclick="expandPanel(1)">
+                            expand_less
+                        </span>
+                    </div>
+                </div>
+                <div class="expansion-panel-content" id="content-1">
+                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the
+                    all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One
+                    day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World
+                    of Grammar.
+                </div>
+                <div class="expansion-panel-divider"></div>
+            </div>
+            <div class="expansion-panel ">
+                <div class="expansion-panel-header">
+                    <div class="expansion-panel-header-title">EDUCATION</div>
+                    <div class="expand-icon-button">
+                        <span class="material-icons expand-icon" id="button-2" onclick="expandPanel(2)">
+                            expand_less
+                        </span>
+                    </div>
+                </div>
+                <div class="expansion-panel-content" id="content-2">
+                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the
+                    all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One
+                    day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World
+                    of Grammar.
+                </div>
+                <div class="expansion-panel-divider"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
