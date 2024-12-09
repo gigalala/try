@@ -1,0 +1,84 @@
+
+
+.page-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+@media screen and (orientation: portrait) {
+    .page {
+      width: 100%;
+
+    }
+}
+
+.name-nav-title{
+text-decoration-line: none;
+line-height: 27;
+    
+}
+
+.name-nav-title > div{
+    color: rgba(31, 31, 31, 0.8);
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 16pt;
+    line-height: 1;
+    padding: 16px 12px;
+}
+
+
+
+.title{
+color: rgb(31, 31, 31);
+font-family: Oswald;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+}
+
+.title-underline{
+    background-color: rgba(31, 31, 31, 0.8);
+    height: 12px;
+    width: 100%;
+
+}
+
+.about-me-section{
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-family: Open Sans;
+    font-size: 13pt;
+}
+
+.about-me-section > p {
+    line-height: 1.6 ;
+    text-align: justify;
+    color:rgba(31, 31, 31, 0.8); 
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+}
+                    
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+                    
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
